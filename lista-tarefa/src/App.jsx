@@ -50,9 +50,9 @@ function App(){
     <main className="app-container">
       <Header/>
       <TarefaForm aoAddTarefa={handleAdicionar}/>
-      <TarefasFilters currentFilter={filter} aoFiltrar={setFilter}/>
-      <p className="tarefa-contador">Tarefas Cadastradas: (tarefas.length)</p>
-      <TarefaList tarefas={tarefas}/>
+      <TarefaFilters currentFilter={filter} aoFiltrar={setFilter} />
+      <p className="tarefa-contador">Tarefas Cadastradas: {tarefas.length}</p>
+      <TarefaList tarefas={tarefas} />
     </main>
   );
 }
